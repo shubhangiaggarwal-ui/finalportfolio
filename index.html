@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubhangi Aggarwal — B.Tech CSE Core | Portfolio & Creative Engineer</title>
+  <meta name="description" content="Personal portfolio of Shubhangi Aggarwal, 1st Year B.Tech CSE Core student at JECRC University. Exploring C, SQL, AI/ML, and Minimalist UI/UX Design.">
+  
+  <!-- Premium Google Fonts: Syne, Plus Jakarta Sans, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Abstract Generative Background Canvas -->
+  <canvas id="art-canvas"></canvas>
+  <div class="ambient-grain"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <nav class="nav-glass-bar">
+        <a href="#home" class="brand-logo" aria-label="Shubhangi Aggarwal Home">
+          <span class="logo-symbol">SA</span>
+          <span>Shubhangi<span style="color: var(--burgundy-primary)">.</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About & Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills & Posters</a></li>
+          <li><a href="#education-projects" class="nav-link">Education & Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="resume.html" target="_blank" class="btn-pill-burgundy">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Resume</span>
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About & Journey</a>
+    <a href="#skills" class="mobile-link">Skills & Posters</a>
+    <a href="#education-projects" class="mobile-link">Education & Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="resume.html" target="_blank" class="mobile-link" style="color: var(--burgundy-primary); font-weight: 700;">View Resume ↗</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         PAGE 1: HOMEPAGE (Hero Section)
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Hero Intro -->
+          <div class="hero-content">
+            <div class="hero-pill-badge">
+              <span class="pulse-orb"></span>
+              <span>B.Tech CSE Core • 1st Year @ JECRC University</span>
+            </div>
+
+            <h1 class="hero-heading">
+              Hi, I'm <span class="name-gradient">Shubhangi</span>.
+            </h1>
+
+            <div class="hero-taglines">
+              <span class="tagline-item">B.Tech Student</span>
+              <span class="tagline-item">CSE Core</span>
+              <span class="tagline-item tagline-highlight">Creative Problem Solver</span>
+            </div>
+
+            <p class="hero-bio">
+              A curious mind blending analytical engineering with intuitive aesthetic design. 
+              Currently exploring foundational algorithms, structured databases, and emerging AI at JECRC University while building clean, user-centered digital experiences.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn-primary-navy">
+                <span>Start a Conversation</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="resume.html" target="_blank" class="btn-secondary-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Curriculum Vitae</span>
+              </a>
+            </div>
+
+            <!-- Social Quick Links -->
+            <div class="hero-socials">
+              <span class="social-label">Connect:</span>
+              
+              <!-- LinkedIn Link -->
+              <a href="https://www.linkedin.com/in/shubhangi-aggarwal-134b50418?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="social-icon-btn" 
+                 aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span class="tooltip-tag">LinkedIn</span>
+              </a>
+
+              <!-- GitHub Link -->
+              <a href="https://github.com/shubhangiaggarwal-ui" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="social-icon-btn" 
+                 aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span class="tooltip-tag">GitHub</span>
+              </a>
+
+              <!-- Email Link -->
+              <a href="mailto:agrwlsammy@gmail.com" 
+                 class="social-icon-btn" 
+                 aria-label="Direct Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span class="tooltip-tag">Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Hero Modern Abstract Card -->
+          <div class="hero-visual-card">
+            <!-- Floating interactive chips -->
+            <div class="floating-chip chip-1">
+              <span class="chip-icon">✦</span>
+              <span>CSE Core @ JECRC</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <span class="chip-icon">☕</span>
+              <span>Code & Design Driven</span>
+            </div>
+
+            <!-- Abstract Canvas Artwork Frame -->
+            <div class="abstract-art-frame">
+              <div class="art-shape art-shape-1"></div>
+              <div class="art-shape art-shape-2"></div>
+              <div class="art-shape art-shape-3"></div>
+
+              <div class="hero-card-inner">
+                <div class="card-top-meta">
+                  <span class="meta-institute">JECRC University</span>
+                  <span class="meta-year">Class of 2030</span>
+                </div>
+
+                <div class="card-center-art">
+                  <div class="sculpture-circle">
+                    <span class="sculpture-initials">SA</span>
+                  </div>
+                  <h3>Shubhangi Aggarwal</h3>
+                  <p>Computer Science & Engineering</p>
+                </div>
+
+                <div class="card-bottom-stats">
+                  <div class="mini-stat">
+                    <span class="stat-num">1st</span>
+                    <span class="stat-text">Year B.Tech</span>
+                  </div>
+                  <div class="mini-stat">
+                    <span class="stat-num">3+</span>
+                    <span class="stat-text">Core Skills</span>
+                  </div>
+                  <div class="mini-stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-text">Curiosity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Animated Scroll to Discover -->
+      <a href="#about" class="scroll-discover-wrapper" aria-label="Scroll down to discover story">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-text">Scroll to Discover</span>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 2: ABOUT PAGE & JOURNEY
+         ========================================================================== -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Chapter 01 • The Narrative</span>
+        </div>
+        
+        <h2 class="section-title">
+          Engineering with Intent, <span class="serif-accent">Designing with Heart</span>.
+        </h2>
+        <p class="section-description">
+          A glimpse into my transition from Sri Ganganagar to JECRC University, discovering the thrill of computing, and nurturing an obsession with creative problem-solving.
+        </p>
+
+        <!-- Story Narrative & Qualities Grid -->
+        <div class="story-grid">
+          
+          <!-- Story Narrative Card -->
+          <div class="story-narrative-card">
+            <span class="quote-decor">“</span>
+            <p class="story-p">
+              My journey began in <strong>Sri Ganganagar</strong>, where a love for mathematics, systematic logic, and creative experimentation shaped my early school years. Moving to <strong>JECRC University</strong> in Jaipur to pursue a <strong>B.Tech in Computer Science & Engineering (Core)</strong> opened a universe of new perspectives.
+            </p>
+            <p class="story-p">
+              As a freshman, I quickly realized that programming is far more than just compiling lines of code—it is an art form. Whether it is unraveling pointer addresses in <strong>C</strong>, structuring relational schemas in <strong>SQL</strong>, or exploring how <strong>Artificial Intelligence</strong> can predict patterns, I thrive on turning abstract concepts into structured, functioning reality.
+            </p>
+            <p class="story-p">
+              Beyond pure algorithmic syntax, I hold a deep fascination for aesthetics. I believe exceptional software must not only work reliably under the hood, but also feel effortless and inviting to the person on the other side of the glass.
+            </p>
+
+            <div class="story-highlight-box">
+              "Always up for anything with creative designs, structured roadmaps, and relentless curiosity."
+            </div>
+          </div>
+
+          <!-- Traits & Qualities -->
+          <div class="qualities-grid">
+            
+            <div class="quality-card">
+              <div class="quality-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+              </div>
+              <div class="quality-info">
+                <h4>Adaptability & Rapid Learning</h4>
+                <p>Swift at acclimatizing to new environments, modern tech paradigms, and dynamic academic demands with a calm, flexible mindset.</p>
+              </div>
+            </div>
+
+            <div class="quality-card">
+              <div class="quality-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="quality-info">
+                <h4>Empathetic Teamwork</h4>
+                <p>Natural collaborator who values diverse inputs, communicates clearly, and elevates team dynamics during hackathons and lab group projects.</p>
+              </div>
+            </div>
+
+            <div class="quality-card">
+              <div class="quality-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div class="quality-info">
+                <h4>Leadership & Initiative</h4>
+                <p>Proactively taking ownership of milestones, organizing peers around common visions, and bringing clarity to ambiguous tasks.</p>
+              </div>
+            </div>
+
+            <div class="quality-card">
+              <div class="quality-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <div class="quality-info">
+                <h4>Meticulous Planning</h4>
+                <p>Deconstructing complex academic and project challenges into bite-sized sprints with milestone tracking and high attention to detail.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Hobbies & Interests Section -->
+        <div class="subheading-row">
+          <h3>Hobbies & What Fuels My Curiosity</h3>
+          <p>Beyond lecture halls and coding terminals, here is what inspires my daily energy.</p>
+        </div>
+
+        <div class="hobbies-grid">
+          
+          <!-- Card 1 -->
+          <div class="hobby-card">
+            <div class="hobby-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h4>Learning Coding</h4>
+            <p>Solving procedural puzzles, untangling pointer logic, and writing elegant algorithmic routines that run with clean efficiency.</p>
+            <span class="hobby-tag">Logic & Syntax</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="hobby-card">
+            <div class="hobby-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4>Exploring Technology</h4>
+            <p>Tracking the rapid emergence of AI tools, cloud ecosystems, modern frontend architectures, and intelligent systems shaping tomorrow.</p>
+            <span class="hobby-tag">Tech Trends</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="hobby-card">
+            <div class="hobby-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h4>Learning New Things</h4>
+            <p>Devouring technical articles, attending engineering workshops, and absorbing unfamiliar domains with relentless curiosity.</p>
+            <span class="hobby-tag">Continuous Growth</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="hobby-card">
+            <div class="hobby-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path></svg>
+            </div>
+            <h4>Creative Activities</h4>
+            <p>Exploring visual design aesthetics, color palettes, typography pairings, and crafting digital compositions with editorial flair.</p>
+            <span class="hobby-tag">Design & Art</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 3: SKILLS, POSTERS & CERTIFICATE GALLERY
+         ========================================================================== */
+    -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Chapter 02 • Core Competencies</span>
+        </div>
+
+        <h2 class="section-title">
+          Interactive Skill Posters & <span class="serif-accent">Certifications</span>.
+        </h2>
+        <p class="section-description">
+          Visualizing technical mastery across low-level programming, relational data engineering, and modern artificial intelligence foundations.
+        </p>
+
+        <!-- Stylish Interactive Posters for C, SQL, AI & ML -->
+        <div class="posters-grid">
+          
+          <!-- Poster 1: C -->
+          <div class="skill-poster poster-c">
+            <div>
+              <div class="poster-header">
+                <span class="poster-category">Systems Programming</span>
+                <span class="poster-num">01</span>
+              </div>
+              <div class="poster-body">
+                <h3>C Language</h3>
+                <p class="poster-desc">
+                  Building deep mental models for memory management, pointers, dynamic memory allocation (malloc/free), and hardware-efficient data structures.
+                </p>
+                <div class="poster-code-mock">
+                  <code>int *ptr = &val;<br>printf("Addr: %p | Val: %d", ptr, *ptr);</code>
+                </div>
+              </div>
+            </div>
+            <div class="poster-tags-wrap">
+              <span class="poster-tag">Pointers & Memory</span>
+              <span class="poster-tag">File Handling</span>
+              <span class="poster-tag">Data Structures</span>
+              <span class="poster-tag">Algorithmic Logic</span>
+            </div>
+          </div>
+
+          <!-- Poster 2: SQL -->
+          <div class="skill-poster poster-sql">
+            <div>
+              <div class="poster-header">
+                <span class="poster-category">Data Architecture</span>
+                <span class="poster-num">02</span>
+              </div>
+              <div class="poster-body">
+                <h3>SQL & Databases</h3>
+                <p class="poster-desc">
+                  Mastering relational data modeling, 3NF schema normalization, nested queries, joins, and high-performance querying for relational data.
+                </p>
+                <div class="poster-code-mock">
+                  <code>SELECT s.name, AVG(g.score)<br>FROM students s JOIN grades g...</code>
+                </div>
+              </div>
+            </div>
+            <div class="poster-tags-wrap">
+              <span class="poster-tag">Relational Modeling</span>
+              <span class="poster-tag">PostgreSQL / MySQL</span>
+              <span class="poster-tag">Normalization (3NF)</span>
+              <span class="poster-tag">Complex Joins</span>
+            </div>
+          </div>
+
+          <!-- Poster 3: AI & Machine Learning -->
+          <div class="skill-poster poster-ai">
+            <div>
+              <div class="poster-header">
+                <span class="poster-category">Intelligent Systems</span>
+                <span class="poster-num">03</span>
+              </div>
+              <div class="poster-body">
+                <h3>AI & Machine Learning</h3>
+                <p class="poster-desc">
+                  Exploring foundational predictive modeling, linear/logistic regression concepts, supervised learning pipelines, and data exploration with Python.
+                </p>
+                <div class="poster-code-mock">
+                  <code>model = LinearRegression()<br>model.fit(X_train, y_train)</code>
+                </div>
+              </div>
+            </div>
+            <div class="poster-tags-wrap">
+              <span class="poster-tag">Supervised Learning</span>
+              <span class="poster-tag">Python & Scikit-Learn</span>
+              <span class="poster-tag">Data Intuition</span>
+              <span class="poster-tag">Predictive Analytics</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Download Resume Action Bar -->
+        <div class="resume-action-bar">
+          <div class="resume-text-side">
+            <h3>Download Shubhangi's Full Resume</h3>
+            <p>Access the detailed, print-ready curriculum vitae detailing academic achievements, coursework, and technical skills.</p>
+          </div>
+          <div class="resume-btn-group">
+            <a href="resume.html" target="_blank" class="btn-primary-navy">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download / Print Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Certificate Gallery -->
+        <div class="certificate-gallery-wrapper">
+          <div class="subheading-row">
+            <h3>Verified Certificate Gallery</h3>
+            <p>Click on any credential to inspect the verified academic and institutional certificates.</p>
+          </div>
+
+          <div class="cert-grid">
+            
+            <!-- Cert 1: Python -->
+            <div class="cert-card" data-cert="python">
+              <div class="cert-inner-border">
+                <div class="cert-top-seal">
+                  <div class="cert-seal-badge">🐍</div>
+                  <span class="cert-status">Verified</span>
+                </div>
+                <h4 class="cert-subject">Python for Problem Solving</h4>
+                <div class="cert-authority">National Informatics & Programming Academy</div>
+                <div class="cert-meta-info">
+                  <span class="cert-id-tag">ID: CERT-PY-88419</span>
+                  <span class="cert-view-hint">View Certificate ↗</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 2: C Programming -->
+            <div class="cert-card" data-cert="c">
+              <div class="cert-inner-border">
+                <div class="cert-top-seal">
+                  <div class="cert-seal-badge">⚡</div>
+                  <span class="cert-status">Verified</span>
+                </div>
+                <h4 class="cert-subject">C Programming & Memory</h4>
+                <div class="cert-authority">JECRC University • Dept. of CSE</div>
+                <div class="cert-meta-info">
+                  <span class="cert-id-tag">ID: CERT-C-01934</span>
+                  <span class="cert-view-hint">View Certificate ↗</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 3: SQL -->
+            <div class="cert-card" data-cert="sql">
+              <div class="cert-inner-border">
+                <div class="cert-top-seal">
+                  <div class="cert-seal-badge">🗄️</div>
+                  <span class="cert-status">Verified</span>
+                </div>
+                <h4 class="cert-subject">Relational Database & SQL</h4>
+                <div class="cert-authority">Database Systems Consortium (DSC)</div>
+                <div class="cert-meta-info">
+                  <span class="cert-id-tag">ID: CERT-SQL-77218</span>
+                  <span class="cert-view-hint">View Certificate ↗</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cert 4: AI & ML -->
+            <div class="cert-card" data-cert="ai">
+              <div class="cert-inner-border">
+                <div class="cert-top-seal">
+                  <div class="cert-seal-badge">🤖</div>
+                  <span class="cert-status">Verified</span>
+                </div>
+                <h4 class="cert-subject">Foundations of AI & ML</h4>
+                <div class="cert-authority">AI Pioneers & Innovation Lab</div>
+                <div class="cert-meta-info">
+                  <span class="cert-id-tag">ID: CERT-AIML-4401</span>
+                  <span class="cert-view-hint">View Certificate ↗</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 4: CONTENT, EDUCATION & PROJECTS
+         ========================================================================== -->
+    <section id="education-projects" class="education-section section-padding">
+      <div class="container">
+        
+        <div class="section-badge">
+          <span class="dot"></span>
+          <span>Chapter 03 • Academics & Creations</span>
+        </div>
+
+        <h2 class="section-title">
+          Education, Projects & <span class="serif-accent">Technical Writings</span>.
+        </h2>
+        <p class="section-description">
+          Grounding theoretical Computer Science in real-world application, structured thinking, and clear written communication.
+        </p>
+
+        <!-- Education Grid -->
+        <div class="edu-grid">
+          
+          <!-- Education Card 1: JECRC -->
+          <div class="edu-card">
+            <span class="edu-year-badge">2026 — Present • Current</span>
+            <h3 class="edu-institution">JECRC University, Jaipur</h3>
+            <p class="edu-degree">Bachelor of Technology (B.Tech) — CSE Core (1st Year)</p>
+            <ul class="edu-highlights">
+              <li>Building core programming expertise in C, Data Structures & Logic design.</li>
+              <li>Active participant in student technical societies, hackathons & code labs.</li>
+              <li>Fusing foundational computer systems knowledge with human-centered UI/UX principles.</li>
+            </ul>
+          </div>
+
+          <!-- Education Card 2: Schooling -->
+          <div class="edu-card">
+            <span class="edu-year-badge">Secondary & Senior Secondary</span>
+            <h3 class="edu-institution">Schooling from Sri Ganganagar</h3>
+            <p class="edu-degree">Science & Mathematics • High Academic Honors</p>
+            <ul class="edu-highlights">
+              <li>Consistent high academic grades and excellence across Science and Mathematics.</li>
+              <li>Fostered strong analytical thinking, competitive problem solving, and disciplined work ethic.</li>
+              <li>Recognized for leadership in school exhibitions, science seminars, and design competitions.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Beginner-Friendly Projects Section -->
+        <div class="projects-header-row">
+          <div>
+            <h3 style="font-size: 1.85rem; color: var(--navy-deep);">Beginner-Friendly Projects</h3>
+            <p style="color: var(--text-muted);">Practical applications crafted during my first year of computer science.</p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: C -->
+          <div class="project-card">
+            <div class="project-thumbnail project-banner-c">
+              <span class="project-badge-float">Systems Programming</span>
+              <div class="project-icon-art">⚡</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="tech-tag">C Language</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">Structures</span>
+                <span class="tech-tag">CLI</span>
+              </div>
+              <h4 class="project-title">Student Record Management System</h4>
+              <p class="project-desc">
+                A robust terminal application developed in C to store, search, update, sort, and persist student academic records using binary file operations and dynamic struct buffers.
+              </p>
+              <div class="project-footer-actions">
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-link-btn">
+                  <span>View Source Repository</span>
+                  <span>→</span>
+                </a>
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-github-btn" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: SQL -->
+          <div class="project-card">
+            <div class="project-thumbnail project-banner-sql">
+              <span class="project-badge-float">Database Systems</span>
+              <div class="project-icon-art">🗄️</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">3NF Normalization</span>
+                <span class="tech-tag">Relational Modeling</span>
+              </div>
+              <h4 class="project-title">Relational Library Database & Query Engine</h4>
+              <p class="project-desc">
+                An optimized database architecture managing book loans, student memberships, and fine penalties with multi-table joins, views, and integrity triggers.
+              </p>
+              <div class="project-footer-actions">
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-link-btn">
+                  <span>View Source Repository</span>
+                  <span>→</span>
+                </a>
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-github-btn" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: AI/ML -->
+          <div class="project-card">
+            <div class="project-thumbnail project-banner-ml">
+              <span class="project-badge-float">Machine Learning</span>
+              <div class="project-icon-art">📈</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Data Visualization</span>
+              </div>
+              <h4 class="project-title">StudyPulse: Academic Focus & Grade Trend Explorer</h4>
+              <p class="project-desc">
+                An exploratory machine learning program analyzing study hours, test scores, and attendance habits to forecast performance and recommend optimal revision schedules.
+              </p>
+              <div class="project-footer-actions">
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-link-btn">
+                  <span>View Source Repository</span>
+                  <span>→</span>
+                </a>
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-github-btn" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: UI / Portfolio Experience -->
+          <div class="project-card">
+            <div class="project-thumbnail project-banner-ui">
+              <span class="project-badge-float">UI/UX & Web</span>
+              <div class="project-icon-art">✨</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">Custom CSS</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">Editorial UI</span>
+              </div>
+              <h4 class="project-title">Minimalist Portfolio Experience</h4>
+              <p class="project-desc">
+                An editorial portfolio featuring custom generative background canvas art, realistic modal certificate views, muted color harmonies, and accessible typography.
+              </p>
+              <div class="project-footer-actions">
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-link-btn">
+                  <span>View Source Repository</span>
+                  <span>→</span>
+                </a>
+                <a href="https://github.com/shubhangiaggarwal-ui" target="_blank" class="project-github-btn" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Technical Articles Section -->
+        <div class="subheading-row">
+          <h3>Technical Articles & Insights</h3>
+          <p>Thoughtful perspectives written from the vantage point of an enthusiastic 1st-year computer science engineer.</p>
+        </div>
+
+        <div class="articles-grid">
+          
+          <!-- Article 1 -->
+          <div class="article-card" data-article="pointers">
+            <div class="article-meta">
+              <span>C Programming</span>
+              <span class="article-read-time">4 min read</span>
+            </div>
+            <h4>Demystifying Pointers in C: A Freshman's Visual Mental Model</h4>
+            <p>Breaking down memory addresses, hexadecimal notation, and dereferencing using tangible architectural metaphors.</p>
+            <div class="article-read-link">
+              <span>Read Perspective</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="article-card" data-article="sql">
+            <div class="article-meta">
+              <span>Databases</span>
+              <span class="article-read-time">5 min read</span>
+            </div>
+            <h4>Why Every First-Year Engineer Should Master SQL Before Frameworks</h4>
+            <p>Exploring why relational algebra, indexing, and data normalization remain the true bedrock of reliable software systems.</p>
+            <div class="article-read-link">
+              <span>Read Perspective</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="article-card" data-article="design">
+            <div class="article-meta">
+              <span>UI/UX & Engineering</span>
+              <span class="article-read-time">4 min read</span>
+            </div>
+            <h4>The Intersection of Code and Design: Why UI Matters in Engineering</h4>
+            <p>Why modern technical creators need both algorithmic proficiency under the hood and human empathy on the surface.</p>
+            <div class="article-read-link">
+              <span>Read Perspective</span>
+              <span>→</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 5: CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="section-badge">
+          <span class="dot" style="background: #FFC0CB;"></span>
+          <span>Chapter 04 • Get in Touch</span>
+        </div>
+
+        <h2 class="section-title">
+          Let’s Create Something <span class="serif-accent" style="color: #FFB3C1;">Extraordinary</span>.
+        </h2>
+        <p class="section-description">
+          Whether you want to discuss algorithmic problems, collaborate on a project, or simply talk about good UI/UX and engineering, I'd love to connect!
+        </p>
+
+        <div class="contact-grid">
+          
+          <!-- Left: Direct Details & Verified Handles -->
+          <div class="contact-info-panel">
+            
+            <div class="contact-direct-card">
+              <h3 class="contact-name-title">Shubhangi Aggarwal</h3>
+              <p class="contact-role-sub">B.Tech CSE Core (1st Year) • JECRC University</p>
+
+              <div class="contact-detail-items">
+                
+                <!-- Email Detail -->
+                <div class="detail-item-box">
+                  <div class="detail-icon-circle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <h5>Direct Email</h5>
+                    <div>
+                      <span class="detail-val">agrwlsammy@gmail.com</span>
+                      <button class="copy-email-btn" title="Copy email address">Copy</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Academic Base -->
+                <div class="detail-item-box">
+                  <div class="detail-icon-circle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <h5>Campus & Location</h5>
+                    <span class="detail-val">JECRC University, Jaipur / Sri Ganganagar</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="connect-channels-box">
+              <h4>Professional Channels</h4>
+              <div class="contact-social-links">
+                
+                <a href="https://www.linkedin.com/in/shubhangi-aggarwal-134b50418?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="social-external-link">
+                  <div class="link-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>Connect on LinkedIn</span>
+                  </div>
+                  <span>↗</span>
+                </a>
+
+                <a href="https://github.com/shubhangiaggarwal-ui" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="social-external-link">
+                  <div class="link-label">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>Follow on GitHub</span>
+                  </div>
+                  <span>↗</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Full Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Aditi Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. aditi@domain.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Topic of Discussion</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Project Collaboration, Mentorship, Coffee Chat..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Hello Shubhangi, I loved your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send-message">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Site Footer -->
+        <footer class="site-footer">
+          <div>
+            <span>© 2026 Shubhangi Aggarwal • JECRC University, Jaipur</span>
+          </div>
+          <div class="footer-quote">
+            "Engineered with rigor, designed with empathy."
+          </div>
+          <div>
+            <a href="#home" style="color: #A1ADC4; text-decoration: underline;">Back to Top ↑</a>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+  
+  <!-- Certificate Inspection Modal -->
+  <div id="cert-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <div class="modal-window">
+      <button id="cert-modal-close" class="modal-close-btn" aria-label="Close certificate modal">✕</button>
+      
+      <div class="cert-modal-view">
+        <div class="cert-modal-header">Certificate of Achievement</div>
+        <h3 id="modal-cert-title" class="cert-modal-title">Certificate Title</h3>
+        <p id="modal-cert-issuer" class="cert-modal-sub">Issuing Organization</p>
+        
+        <p style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--navy-muted); margin-bottom: 0.3rem;">Awarded to</p>
+        <div id="modal-cert-recipient" class="cert-modal-recipient">Shubhangi Aggarwal</div>
+        
+        <p id="modal-cert-summary" class="cert-modal-body">
+          For demonstrating high competence and mastery.
+        </p>
+
+        <div class="cert-modal-footer">
+          <div class="cert-sig-block">
+            <div id="modal-cert-sig" class="cert-signature">Authorized Signature</div>
+            <div id="modal-cert-sigtitle" class="cert-sig-title">Director of Academics</div>
+          </div>
+
+          <div class="cert-gold-seal">★</div>
+
+          <div style="text-align: right;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-subtle);">Issue Date: <span id="modal-cert-date" style="color: var(--navy-deep); font-weight: 700;">2026</span></div>
+            <div style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--burgundy-primary);" id="modal-cert-id">ID: CERT-XXXXX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Reader Modal -->
+  <div id="article-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-article-title">
+    <div class="modal-window">
+      <button id="article-modal-close" class="modal-close-btn" aria-label="Close article modal">✕</button>
+      <div style="padding: 0.5rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1rem;">
+          <span id="modal-article-tag" style="background: var(--burgundy-soft); color: var(--burgundy-primary); font-size: 0.78rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: var(--radius-full);">Tag</span>
+          <span id="modal-article-time" style="font-size: 0.82rem; color: var(--text-subtle);">Read time</span>
+        </div>
+        <h3 id="modal-article-title" style="font-size: 1.85rem; color: var(--navy-deep); margin-bottom: 1.5rem; line-height: 1.25;">Article Title</h3>
+        <div id="modal-article-body" style="font-size: 1rem; color: var(--black-soft); line-height: 1.8;">
+          Article content goes here.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

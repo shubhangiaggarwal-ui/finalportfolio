@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubhangi Aggarwal | Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FBF8F3;
+      --card-bg: #FFFFFF;
+      --navy: #0B1325;
+      --navy-light: #1F2C4C;
+      --burgundy: #6E1B2D;
+      --burgundy-soft: #F5EAEB;
+      --text: #1A1C20;
+      --muted: #555B66;
+      --border: #E5DED4;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+    }
+
+    .resume-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 3.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(11, 19, 37, 0.08);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+
+    .top-action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s ease;
+    }
+
+    .btn-print {
+      background: var(--burgundy);
+      color: #FFFFFF;
+    }
+
+    .btn-print:hover {
+      background: #8C253B;
+      transform: translateY(-2px);
+    }
+
+    .btn-back {
+      background: var(--bg);
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+
+    .btn-back:hover {
+      background: #EFE8DC;
+    }
+
+    /* Resume Header */
+    .resume-header {
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 1.8rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .header-left h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.5rem;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+
+    .header-left p.title-sub {
+      font-size: 1.1rem;
+      color: var(--burgundy);
+      font-weight: 600;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 0.88rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .header-right a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .header-right a:hover {
+      color: var(--burgundy);
+    }
+
+    /* Sections */
+    .resume-section {
+      margin-bottom: 2rem;
+    }
+
+    .section-heading {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .summary-text {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Timelines / Entry Rows */
+    .entry-item {
+      margin-bottom: 1.25rem;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .entry-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .entry-subtitle {
+      font-size: 0.9rem;
+      color: var(--burgundy);
+      font-weight: 600;
+    }
+
+    .entry-date {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .entry-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .entry-desc ul {
+      margin-left: 1.2rem;
+      margin-top: 0.35rem;
+    }
+
+    .entry-desc li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* Skills Grid */
+    .skills-cluster {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+
+    .skill-box {
+      background: var(--bg);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .skill-box strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.88rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .skill-box span {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #FFFFFF;
+        padding: 0;
+      }
+      .top-action-bar {
+        display: none;
+      }
+      .resume-wrapper {
+        box-shadow: none;
+        border: none;
+        padding: 1.5cm;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .resume-wrapper { padding: 2rem 1.5rem; }
+      .resume-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .header-right { text-align: left; }
+      .skills-cluster { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-wrapper">
+    <!-- Action Bar -->
+    <div class="top-action-bar">
+      <a href="index.html" class="btn-action btn-back">← Back to Portfolio</a>
+      <button onclick="window.print()" class="btn-action btn-print">🖨️ Print / Save as PDF</button>
+    </div>
+
+    <!-- Header -->
+    <header class="resume-header">
+      <div class="header-left">
+        <h1>Shubhangi Aggarwal</h1>
+        <p class="title-sub">B.Tech CSE Core (1st Year) • Creative Problem Solver</p>
+      </div>
+      <div class="header-right">
+        <div>📧 <a href="mailto:agrwlsammy@gmail.com">agrwlsammy@gmail.com</a></div>
+        <div>📍 JECRC University, Jaipur / Sri Ganganagar</div>
+        <div>🔗 <a href="https://www.linkedin.com/in/shubhangi-aggarwal-134b50418" target="_blank">LinkedIn Profile</a></div>
+        <div>💻 <a href="https://github.com/shubhangiaggarwal-ui" target="_blank">GitHub Profile</a></div>
+      </div>
+    </header>
+
+    <!-- Professional Profile -->
+    <section class="resume-section">
+      <h2 class="section-heading">Professional Summary</h2>
+      <p class="summary-text">
+        Motivated and intellectually curious first-year B.Tech Computer Science & Engineering student at JECRC University with a solid foundation in C programming, relational databases (SQL), and algorithmic problem solving. Combines analytical technical thinking with an eye for minimalist, intuitive UI/UX design. Highly adaptable, proactive team collaborator with leadership qualities and an eagerness to explore applied Machine Learning.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2 class="section-heading">Education</h2>
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">JECRC University, Jaipur</span>
+            <span class="entry-subtitle"> — Bachelor of Technology (B.Tech), Computer Science & Engineering (Core)</span>
+          </div>
+          <span class="entry-date">2026 – Present (1st Year)</span>
+        </div>
+        <div class="entry-desc">
+          Relevant coursework: C Programming, Discrete Mathematics, Digital Electronics, Algorithmic Thinking, Computer Architecture foundations.
+        </div>
+      </div>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Senior Secondary & High School</span>
+            <span class="entry-subtitle"> — Sri Ganganagar, Rajasthan</span>
+          </div>
+          <span class="entry-date">Graduated with High Honors</span>
+        </div>
+        <div class="entry-desc">
+          Consistent top-tier academic grades in Physics, Chemistry, and Mathematics with active participation in science fairs and creative design initiatives.
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2 class="section-heading">Technical & Core Skills</h2>
+      <div class="skills-cluster">
+        <div class="skill-box">
+          <strong>Programming & Logic</strong>
+          <span>C (Pointers, Memory Allocation, Structures), Python Basics</span>
+        </div>
+        <div class="skill-box">
+          <strong>Databases & Modeling</strong>
+          <span>SQL (MySQL/PostgreSQL), Schema Normalization (3NF), Relational Queries</span>
+        </div>
+        <div class="skill-box">
+          <strong>Emerging Technologies</strong>
+          <span>AI & Machine Learning Foundations, Data Exploration, Predictive Modeling basics</span>
+        </div>
+        <div class="skill-box">
+          <strong>Design & Tools</strong>
+          <span>UI/UX Design Principles, Minimalist Layouts, Git, GitHub, VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Projects -->
+    <section class="resume-section">
+      <h2 class="section-heading">Key Projects</h2>
+      
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">Student Record Management System</span>
+          <span class="entry-date">C Language • File I/O • Structures</span>
+        </div>
+        <div class="entry-desc">
+          <ul>
+            <li>Engineered a robust terminal-based application in C to store, search, update, and manage persistent student records using binary file handling.</li>
+            <li>Implemented custom sorting routines and error validation to eliminate memory leaks and ensure data consistency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">Relational Library Database & Query Management System</span>
+          <span class="entry-date">SQL • PostgreSQL/MySQL • 3NF</span>
+        </div>
+        <div class="entry-desc">
+          <ul>
+            <li>Designed a fully normalized (3NF) relational database schema for university libraries, tracking books, student memberships, and fine allocations.</li>
+            <li>Authored multi-table joins, subqueries, and view aggregations for instant loan statistics and overdue reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">StudyPulse: Academic Focus & Grade Trend Explorer</span>
+          <span class="entry-date">Python • Machine Learning Basics • Scikit-Learn</span>
+        </div>
+        <div class="entry-desc">
+          <ul>
+            <li>Developed an early predictive modeling tool analyzing weekly study hours, attendance patterns, and assessment scores.</li>
+            <li>Produced visual evaluation plots to help first-year peers identify subject bottlenecks and optimize exam preparation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">Minimalist Personal Portfolio & Interactive Visual Experience</span>
+          <span class="entry-date">HTML5 • Modern CSS • Vanilla JS • UI/UX</span>
+        </div>
+        <div class="entry-desc">
+          <ul>
+            <li>Designed and coded an editorial, accessible portfolio featuring interactive canvas art, realistic certificate views, and muted luxury palette (navy, beige, burgundy).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Soft Skills -->
+    <section class="resume-section">
+      <h2 class="section-heading">Certifications & Soft Skills</h2>
+      <div class="entry-desc">
+        <p><strong>Certifications:</strong> Python for Problem Solving (NIPA) • C Programming & Memory Foundations (JECRC CSE) • Relational Database & SQL Mastery (DSC) • Foundations of AI & Machine Learning Exploration.</p>
+        <p style="margin-top: 0.6rem;"><strong>Key Attributes:</strong> Adaptability & fast learning curve, empathetic teamwork, proactive leadership, structured planning & roadmapping, relentless creative curiosity.</p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
